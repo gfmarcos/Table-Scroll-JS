@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  overflow-y: visible;
+  overflow-x: scroll;
+  padding-top: 50px;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 2rem;
+  border: 1px solid rgb(242, 215, 179);
+}
+thead {
+  position: sticky;
+  top: 0;
+}
+thead th {
+  background-color: rgb(243, 197, 141);
+}
+
+thead th:first-child,
+tbody th {
+  background-color: rgb(118, 87, 46);
+  position: sticky;
+  left: 0;
+}
+thead th:first-child {
+  background-color: chocolate;
+  z-index: 1;
+}
+.label {
+  position: relative;
+}
+.label div {
+  background-color: rgb(68, 157, 204);
+  position: absolute;
+  width: 100%;
+  margin: 0 -2rem;
+  height: 50px;
+  transform: translateY(-83px);
+}
+.label--in div{
+  transform: translateY(-30px);
+  height: 20px;
+}
+.blank {
+  height: 50px;
+  background-color: blue;
+  position: sticky;
+  left: 0px;
+}
