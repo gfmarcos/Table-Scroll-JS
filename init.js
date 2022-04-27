@@ -1,9 +1,7 @@
 window.addEventListener('scroll', () => {
   const content = document.querySelector('#content');
-  const table = document.querySelector('#table');
   const thead = document.querySelector('#thead');
   const label = document.querySelector('#label');
-  const tablePos = table.offsetTop;
   const contentPos = content.offsetTop;
 
   let pageScroll = window.pageYOffset;
